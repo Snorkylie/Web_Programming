@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shanren is a fantasy pixel-art action platformer and student game project.">
+    <title>Shanren | A Pixel Fantasy Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Navigation: the links scroll to sections on this page. -->
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Shanren home">
+            <span class="logo-mark">✦</span> SHANREN
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#about">The Game</a>
+            <a href="#classes">Classes</a>
+            <a href="#world">The World</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+        <a class="header-link" href="#about">Discover <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+        <!-- HERO / START SCREEN -->
+        <section id="home" class="hero">
+            <div class="hero-image" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-content wrap">
+                <p class="eyebrow"><span class="line"></span> A 2D PIXEL FANTASY ADVENTURE</p>
+                <h1>SHANREN</h1>
+                <p class="hero-subtitle">A world forgotten. A journey begins.</p>
+                <p class="hero-description">Discover a dark pixel-art world, face dangerous enemies and explore the ruins of a forgotten age.</p>
+                <a class="button-primary" href="#about">ENTER THE WORLD <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-bottom wrap">
+                <span>FANTASY · ACTION RPG · ROGUE-LIKE</span>
+                <a href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+        <!-- ABOUT THE GAME -->
+        <section id="about" class="section about-section">
+            <div class="wrap">
+                <div class="section-label">01 <span></span> THE GAME</div>
+                <div class="about-layout">
+                    <div>
+                        <p class="overline">THE JOURNEY BEGINS</p>
+                        <h2>Every step tells<br><em>a story.</em></h2>
+                    </div>
+                    <div class="about-text">
+                        <p><strong>Shanren</strong> is a 2D pixel-art action platformer with
+                            fantasy RPG and rogue-like ideas. Travel through different areas,
+                            choose a class and face the challenges ahead.</p>
+                        <p>Explore the world by running and jumping, fight enemies with magic
+                            or a blade, and collect relics along the way.</p>
+                        <div class="feature-pills">
+                            <span>EXPLORATION</span>
+                            <span>MAGIC & COMBAT</span>
+                            <span>PIXEL ART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHARACTER CLASSES -->
+        <section id="classes" class="section classes-section">
+            <div class="wrap">
+                <div class="section-label">02 <span></span> CHARACTER CLASSES</div>
+                <div class="section-intro">
+                    <div>
+                        <p class="overline">TWO DIFFERENT PATHS</p>
+                        <h2>Choose your <em>fate.</em></h2>
+                    </div>
+                    <p>Do you prefer a sword empowered by magic, or the power of spells?
+                        Your journey begins with a choice.</p>
+                </div>
+                <div class="class-grid">
+                    <article class="class-card swordmage">
+                        <div class="class-art">
+                            <!-- Early class concept artwork; replace with your final Swordmage asset. -->
+                            <img src="assets/swordmage.png" alt="Placeholder pixel sprite of the Swordmage class">
+                        </div>
+                        <div class="class-info">
+                            <span class="card-number">CLASS 01 / MELEE + MAGIC</span>
+                            <h3>Swordmage</h3>
+                            <p>A fighter who combines close-range sword attacks
+                                with the power of magic.</p>
+                            <p class="character-note">Concepts: Nature Relic Warden · Rosebound Adept</p>
+                        </div>
+                    </article>
+                    <article class="class-card mage">
+                        <div class="class-art">
+                            <!-- Early class concept artwork; replace with your final Mage asset. -->
+                            <img src="assets/mage.png" alt="Placeholder pixel sprite of the Mage class">
+                        </div>
+                        <div class="class-info">
+                            <span class="card-number">CLASS 02 / SPELLCASTING</span>
+                            <h3>Mage</h3>
+                            <p>A spellcaster who uses arcane abilities
+                                to overcome enemies and obstacles.</p>
+                            <p class="character-note">Concepts: Moonlit Scholar · Rosebound Enchantress</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLACES IN THE GAME WORLD -->
+        <section id="world" class="section world-section">
+            <div class="wrap">
+                <div class="section-label">03 <span></span> THE WORLD</div>
+                <div class="section-intro">
+                    <div>
+                        <p class="overline">BEYOND THE HORIZON</p>
+                        <h2>Three places.<br><em>Countless mysteries.</em></h2>
+                    </div>
+                    <p>Discover the locations that shape the world of Shanren.
+                        The location artwork here is conceptual. The gallery below also includes original level assets from the project.</p>
+                </div>
+                <div class="world-grid">
+                    <article class="world-card">
+                        <img src="assets/trebla.png" alt="Pixel-art concept landscape of Trebla, with forests and a village">
+                        <div class="world-card-text"><span>01 / LOCATION</span><h3>Trebla</h3></div>
+                    </article>
+                    <article class="world-card">
+                        <img src="assets/zaramunz.png" alt="Pixel-art concept landscape showing the Ruins of Zaramunz">
+                        <div class="world-card-text"><span>02 / LOCATION</span><h3>Ruins of Zaramunz</h3></div>
+                    </article>
+                    <article class="world-card">
+                        <img src="assets/roses.png" alt="Pixel-art concept landscape of Roses End with rose-colored ruins">
+                        <div class="world-card-text"><span>03 / LOCATION</span><h3>Roses End</h3></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actual level backgrounds and enemy sprite from your uploaded assets -->
+        <section id="gallery" class="section gallery-section">
+            <div class="wrap">
+                <div class="section-label">04 <span></span> IN-GAME ARTWORK</div>
+                <div class="section-intro">
+                    <div>
+                        <p class="overline">A LOOK BEHIND THE PIXELS</p>
+                        <h2>From concept <em>to game.</em></h2>
+                    </div>
+                    <p>Early artwork taken from the project's sprite and background packs. These are development assets, not gameplay screenshots.</p>
+                </div>
+                <div class="gallery-grid">
+                    <figure class="gallery-tile">
+                        <img src="assets/moon-level.png" alt="Moonlit pixel art level with ruins and trees" loading="lazy">
+                        <figcaption>MOONLIT RUINS <small>Background artwork · Final pack</small></figcaption>
+                    </figure>
+                    <figure class="gallery-tile">
+                        <img src="assets/forest-level.png" alt="Fantasy pixel art environment from the project" loading="lazy">
+                        <figcaption>FANTASY ENVIRONMENT <small>Background artwork · Final pack</small></figcaption>
+                    </figure>
+                    <figure class="gallery-tile gallery-enemy">
+                        <div class="enemy-scene"><img src="assets/enemy-ninja.png" alt="Yellow ninja enemy sprite in idle pose" loading="lazy"></div>
+                        <figcaption>YELLOW NINJA <small>Enemy sprite · FreeNinja pack</small></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="end-section">
+            <div class="wrap">
+                <p class="overline">A STUDENT GAME PROJECT · WORK IN PROGRESS</p>
+                <h2>The adventure is <em>just beginning.</em></h2>
+                <a class="button-primary" href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-content">
+            <span>✦ SHANREN</span>
+            <span>Student website concept · 2026</span>
+            <a href="#home">TOP ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
