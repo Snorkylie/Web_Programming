@@ -16,9 +16,10 @@
         </a>
         <nav aria-label="Main navigation">
             <a href="#about">The Game</a>
-            <a href="#classes">Classes</a>
+            <a href="#character">Character</a>
             <a href="#world">The World</a>
             <a href="#gallery">Gallery</a>
+            <a href="#plans">Development Plans</a>
         </nav>
         <a class="header-link" href="#about">Discover <span aria-hidden="true">↗</span></a>
     </header>
@@ -53,9 +54,8 @@
                     <div class="about-text">
                         <p><strong>Shanren</strong> is a 2D pixel-art action platformer with
                             fantasy RPG and rogue-like ideas. Travel through different areas,
-                            choose a class and face the challenges ahead.</p>
-                        <p>Explore the world by running and jumping, fight enemies with magic
-                            or a blade, and collect relics along the way.</p>
+                            take control of a lone adventurer and face the challenges ahead.</p>
+                        <p>Explore the world by running and jumping, fight enemies, develop new abilities, and collect relics along the way.</p>
                         <div class="feature-pills">
                             <span>EXPLORATION</span>
                             <span>MAGIC & COMBAT</span>
@@ -66,45 +66,39 @@
             </div>
         </section>
 
-        <!-- CHARACTER CLASSES -->
-        <section id="classes" class="section classes-section">
+        <!-- THE MAIN CHARACTER: playable animation viewer -->
+        <section id="character" class="section character-section">
             <div class="wrap">
-                <div class="section-label">02 <span></span> CHARACTER CLASSES</div>
+                <div class="section-label">02 <span></span> THE CHARACTER</div>
                 <div class="section-intro">
                     <div>
-                        <p class="overline">TWO DIFFERENT PATHS</p>
-                        <h2>Choose your <em>fate.</em></h2>
+                        <p class="overline">MEET YOUR ADVENTURER</p>
+                        <h2>One hero. <em>Many moves.</em></h2>
                     </div>
-                    <p>Do you prefer a sword empowered by magic, or the power of spells?
-                        Your journey begins with a choice.</p>
+                    <p>Meet the current prototype character from the game's sprite pack. Select an action to preview its real pixel-art animation.</p>
                 </div>
-                <div class="class-grid">
-                    <article class="class-card swordmage">
-                        <div class="class-art">
-                            <!-- Early class concept artwork; replace with your final Swordmage asset. -->
-                            <img src="assets/swordmage.png" alt="Placeholder pixel sprite of the Swordmage class">
+                <div class="character-showcase">
+                    <div class="character-stage" aria-label="Pixel-art character animation preview">
+                        <div class="character-stage-glow" aria-hidden="true"></div>
+                        <img id="character-sprite"
+                             src="assets/character/idle/frame-00.png"
+                             alt="The Shanren prototype character standing in an idle pose"
+                             width="256" height="150">
+                        <span class="stage-caption">CHARACTER ANIMATION PREVIEW <span>•</span> WORK IN PROGRESS</span>
+                    </div>
+                    <div class="character-controls">
+                        <p class="overline">ANIMATION SELECTOR</p>
+                        <h3 id="animation-title" aria-live="polite">Idle</h3>
+                        <p id="animation-description">The adventurer is ready for the next journey.</p>
+                        <div class="animation-buttons" aria-label="Choose a character animation">
+                            <button class="animation-button active" type="button" data-animation="idle" aria-pressed="true">Idle</button>
+                            <button class="animation-button" type="button" data-animation="run" aria-pressed="false">Run</button>
+                            <button class="animation-button" type="button" data-animation="attack" aria-pressed="false">Attack</button>
+                            <button class="animation-button" type="button" data-animation="jump" aria-pressed="false">Jump</button>
                         </div>
-                        <div class="class-info">
-                            <span class="card-number">CLASS 01 / MELEE + MAGIC</span>
-                            <h3>Swordmage</h3>
-                            <p>A fighter who combines close-range sword attacks
-                                with the power of magic.</p>
-                            <p class="character-note">Concepts: Nature Relic Warden · Rosebound Adept</p>
-                        </div>
-                    </article>
-                    <article class="class-card mage">
-                        <div class="class-art">
-                            <!-- Early class concept artwork; replace with your final Mage asset. -->
-                            <img src="assets/mage.png" alt="Placeholder pixel sprite of the Mage class">
-                        </div>
-                        <div class="class-info">
-                            <span class="card-number">CLASS 02 / SPELLCASTING</span>
-                            <h3>Mage</h3>
-                            <p>A spellcaster who uses arcane abilities
-                                to overcome enemies and obstacles.</p>
-                            <p class="character-note">Concepts: Moonlit Scholar · Rosebound Enchantress</p>
-                        </div>
-                    </article>
+                        <button id="animation-pause" class="pause-button" type="button" aria-pressed="false">⏸ Pause animation</button>
+                        <p class="character-credit">Original animation frames from the uploaded platformer character pack. Class selection is not part of this preview.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,6 +160,42 @@
             </div>
         </section>
 
+        <!-- DEVELOPMENT ROADMAP: these are goals, not completed features -->
+        <section id="plans" class="section plans-section">
+            <div class="wrap">
+                <div class="section-label">05 <span></span> DEVELOPMENT PLANS</div>
+                <div class="section-intro">
+                    <div>
+                        <p class="overline">WHAT COMES NEXT</p>
+                        <h2>The future of <em>Shanren.</em></h2>
+                    </div>
+                    <p>Shanren is still a work in progress. These are the ideas and development goals I want to work on next.</p>
+                </div>
+                <div class="plans-panel">
+                    <div class="engine-feature">
+                        <span class="engine-label">PLANNED GAME ENGINE</span>
+                        <h3>Unreal <em>Engine.</em></h3>
+                        <p>My goal is to build and run Shanren in Unreal Engine, bringing the pixel-art world, character movement and combat together in a playable experience.</p>
+                        <span class="development-tag">FUTURE DEVELOPMENT GOAL</span>
+                    </div>
+                    <div class="roadmap-list">
+                        <div class="roadmap-item">
+                            <span>01</span>
+                            <div><h4>Character &amp; combat</h4><p>Improve animations, movement and combat interactions.</p></div>
+                        </div>
+                        <div class="roadmap-item">
+                            <span>02</span>
+                            <div><h4>Enemies &amp; progression</h4><p>Add more enemy behavior, challenges and rogue-like progression ideas.</p></div>
+                        </div>
+                        <div class="roadmap-item">
+                            <span>03</span>
+                            <div><h4>World building</h4><p>Continue developing Trebla, the Ruins of Zaramunz and Roses End.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="end-section">
             <div class="wrap">
                 <p class="overline">A STUDENT GAME PROJECT · WORK IN PROGRESS</p>
@@ -182,6 +212,7 @@
             <a href="#home">TOP ↑</a>
         </div>
     </footer>
+    <script src="animations.js" defer></script>
 
 </body>
 </html>
